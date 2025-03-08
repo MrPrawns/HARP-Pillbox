@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <title>Pill Reminder</title>
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="images/icons/app-logo.png" alt="App Logo" class="sidebar-logo">
+            <span class="app-title">HARP</span>
+        </div>
+        <ul class="sidebar-menu">
+            <li>
+                <img src="images/icons/home.png" alt="Home Icon">
+                <span>Home</span>
+            </li>
+            <li>
+                <img src="images/icons/calendar.png" alt="Calendar Icon">
+                <span>Calendar</span>
+            </li>
+            <li>
+                <img src="images/icons/pills-bottle.png" alt="Pillbox Icon">
+                <span>Your Pillbox</span>
+            </li>
+        </ul>
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Today's Pills Section -->
+        <section id="today-section">
+            <h2>Today</h2>
+            <div class="pill-container">
+                <div class="pill-card taken">
+                    <img src="images/icons/medicine.png" alt="Pill Icon">
+                    <p class="pill-name">Pill Name 1</p>
+                    <p class="pill-dosage">Dosage: 2</p>
+                    <p class="pill-time">9:00 AM</p>
+                    <p class="pill-status">Taken</p>
+                </div>
+                <div class="pill-card taken">
+                    <img src="images/icons/medicine.png" alt="Pill Icon">
+                    <p class="pill-name">Pill Name 2</p>
+                    <p class="pill-dosage">Dosage: 2</p>
+                    <p class="pill-time">3:00 PM</p>
+                    <p class="pill-status">Taken</p>
+                </div>
+                <div class="pill-card not-taken">
+                    <img src="images/icons/medicine.png" alt="Pill Icon">
+                    <p class="pill-name">Pill Name 3</p>
+                    <p class="pill-dosage">Dosage: 2</p>
+                    <p class="pill-time">8:00 AM</p>
+                    <p class="pill-status">Not Taken</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Restock Alert Section -->
+        <section id="restock-container">
+            <h2 class="restock-heading">Restock In <span class="restock-days">4</span> Days</h2>
+            <div class="restock-content">
+                <div id="restock-section">
+                    <div class="restock-dates">
+                        <span class="start-date">Start Date: 2nd March 2025</span>
+                        <span class="end-date">End Date: 2nd March 2025</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Last 7 Days Section -->
+        <section id="history-section">
+            <h2>Last 7 Days</h2>
+            <div class="history-container">
+                <div class="history-card">
+                    <div class="history-header">
+                        <img src="images/icons/calendar.png" alt="Calendar Icon">
+                        <p class="history-date">
+                            <span class="history-day">Monday</span>
+                            <span class="history-month-date">March 10</span>
+                        </p>
+                    </div>
+                    <div class="history-checkboxes">
+                        <label><input type="checkbox" disabled checked> Morning</label>
+                        <label><input type="checkbox" disabled checked> Afternoon</label>
+                        <label><input type="checkbox" disabled> Night</label>
+                    </div>
+                </div>
+            
+                <div class="history-card">
+                    <div class="history-header">
+                        <img src="images/icons/calendar.png" alt="Calendar Icon">
+                        <p class="history-date">
+                            <span class="history-day">Tuesday</span>
+                            <span class="history-month-date">March 11</span>
+                        </p>
+                    </div>
+                    <div class="history-checkboxes">
+                        <label><input type="checkbox" disabled> Morning</label>
+                        <label><input type="checkbox" disabled> Afternoon</label>
+                        <label><input type="checkbox" disabled> Night</label>
+                    </div>
+                </div>
+            
+                <div class="history-card">
+                    <div class="history-header">
+                        <img src="images/icons/calendar.png" alt="Calendar Icon">
+                        <p class="history-date">
+                            <span class="history-day">Wednesday</span>
+                            <span class="history-month-date">March 12</span>
+                        </p>
+                    </div>
+                    <div class="history-checkboxes">
+                        <label><input type="checkbox" disabled> Morning</label>
+                        <label><input type="checkbox" disabled> Afternoon</label>
+                        <label><input type="checkbox" disabled> Night</label>
+                    </div>
+                </div>
+            
+                <div class="history-card">
+                    <div class="history-header">
+                        <img src="images/icons/calendar.png" alt="Calendar Icon">
+                        <p class="history-date">
+                            <span class="history-day">Thursday</span>
+                            <span class="history-month-date">March 13</span>
+                        </p>
+                    </div>
+                    <div class="history-checkboxes">
+                        <label><input type="checkbox" disabled> Morning</label>
+                        <label><input type="checkbox" disabled> Afternoon</label>
+                        <label><input type="checkbox" disabled> Night</label>
+                    </div>
+                </div>
+            
+                <div class="history-card">
+                    <div class="history-header">
+                        <img src="images/icons/calendar.png" alt="Calendar Icon">
+                        <p class="history-date">
+                            <span class="history-day">Friday</span>
+                            <span class="history-month-date">March 14</span>
+                        </p>
+                    </div>
+                    <div class="history-checkboxes">
+                        <label><input type="checkbox" disabled> Morning</label>
+                        <label><input type="checkbox" disabled> Afternoon</label>
+                        <label><input type="checkbox" disabled> Night</label>
+                    </div>
+                </div>
+            
+                <div class="history-card">
+                    <div class="history-header">
+                        <img src="images/icons/calendar.png" alt="Calendar Icon">
+                        <p class="history-date">
+                            <span class="history-day">Saturday</span>
+                            <span class="history-month-date">March 15</span>
+                        </p>
+                    </div>
+                    <div class="history-checkboxes">
+                        <label><input type="checkbox" disabled> Morning</label>
+                        <label><input type="checkbox" disabled> Afternoon</label>
+                        <label><input type="checkbox" disabled> Night</label>
+                    </div>
+                </div>
+            
+                <div class="history-card">
+                    <div class="history-header">
+                        <img src="images/icons/calendar.png" alt="Calendar Icon">
+                        <p class="history-date">
+                            <span class="history-day">Sunday</span>
+                            <span class="history-month-date">March 16</span>
+                        </p>
+                    </div>
+                    <div class="history-checkboxes">
+                        <label><input type="checkbox" disabled> Morning</label>
+                        <label><input type="checkbox" disabled> Afternoon</label>
+                        <label><input type="checkbox" disabled> Night</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="scripts/homepage.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="styles/calendar.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button class="nav-button" id="prev-month">&larr;</button>
+            <h2 id="month-year"></h2>
+            <button class="nav-button" id="next-month">&rarr;</button>
+        </div>
+        <table class="calendar">
+            <thead>
+                <tr>
+                    <th>SUNDAY</th>
+                    <th>MONDAY</th>
+                    <th>TUESDAY</th>
+                    <th>WEDNESDAY</th>
+                    <th>THURSDAY</th>
+                    <th>FRIDAY</th>
+                    <th>SATURDAY</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body">
+                <!-- Calendar will be generated dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="scripts/calendar.js"></script>
+</body>
+</html>

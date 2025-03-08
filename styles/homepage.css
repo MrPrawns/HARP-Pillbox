@@ -1,0 +1,221 @@
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+h2 {
+  color: #0D0D0D;
+}
+
+/* Today Section */
+#today-section {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.pill-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pill-card {
+  background-color: #7E679B;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 120px;
+}
+
+.pill-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.pill-name {
+  font-weight: 700;
+}
+
+/* Restock Section */
+#restock-container {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.restock-heading {
+  margin-bottom: 10px;
+  text-align: left;
+  color: #0D0D0D;
+}
+
+.restock-days {
+  color: #7E679B;
+}
+
+.restock-content {
+  background-color: #7E679B;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+}
+
+.restock-dates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* History Section */
+#history-section {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.history-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 1500px) {
+  .history-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .history-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .history-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .history-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* History Card */
+.history-card {
+  background-color: #7E679B;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* History Header - Align Icon & Date */
+.history-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 60px;
+}
+
+.history-header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.history-date {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.history-day {
+  display: block;
+  font-weight: bold;
+}
+
+.history-month-date {
+  display: block;
+}
+
+/* Checkbox Styling */
+.history-checkboxes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.history-checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  text-align: left;
+}
+
+.history-checkboxes input[type="checkbox"] {
+  appearance: none; /* Removes default styles */
+  width: 20px; /* Adjust size */
+  height: 20px; /* Adjust size */
+  border: 3px solid white; /* Thick white border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: transparent; /* Transparent background */
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+/* Style checkboxes */
+.history-checkboxes input[type="checkbox"] {
+  appearance: none; /* Remove default checkbox styling */
+  width: 20px; /* Adjust size */
+  height: 20px;
+  border: 2px solid white; /* White border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: transparent; /* Transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Checked state - Add a tick */
+.history-checkboxes input[type="checkbox"]:checked {
+  background-color: white; /* White box when checked */
+  position: relative;
+}
+
+/* Add tick mark */
+.history-checkboxes input[type="checkbox"]:checked::after {
+  content: '✔'; /* Tick mark */
+  font-size: 16px; /* Adjust tick size */
+  color: #2db521; /* Tick color */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

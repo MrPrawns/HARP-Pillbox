@@ -1,0 +1,136 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-page layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Calendar container */
+.calendar-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+/* Calendar header */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/* Calendar table */
+table {
+  width: 100%;
+  max-width: 1200px;
+  border-collapse: collapse;
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Ensures rounding applies to all corners */
+}
+
+/* Table header */
+th, td {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  position: relative;
+  width: calc(100% / 7);
+  height: 80px;
+}
+
+/* Header row */
+th {
+  background-color: #6c5898;
+  color: white;
+  height: 50px;
+}
+
+/* Default cell background */
+td {
+  background-color: #d1bddb;
+  font-weight: bold;
+}
+
+/* Rounded top corners for first and last headers */
+th:first-child {
+  border-top-left-radius: 12px;
+}
+th:last-child {
+  border-top-right-radius: 12px;
+}
+
+/* Rounded bottom corners for last row */
+tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+/* Status text styling */
+.status {
+  display: block;
+  width: 80%;
+  margin: 5px auto 0;
+  padding: 3px;
+  font-size: 0.9em;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Taken (Green) */
+.taken .status {
+  background-color: #66c2a5;
+  color: white;
+}
+
+/* Not Taken (Red) */
+.not-taken .status {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* Waiting (Grey) */
+.waiting .status {
+  background-color: #b0b0b0;
+  color: white;
+}
+
+/* Highlight today's date */
+.today {
+  background-color: #b08fcf !important; /* A slightly brighter shade */
+}
+

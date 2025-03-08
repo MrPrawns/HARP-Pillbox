@@ -1,32 +1,72 @@
+/* Sidebar Styles */
 .sidebar {
   position: fixed;
   left: 0;
-  bottom: 0;
-  top: 55px;
-  background-color: white;
-  width: 72px;
-  z-index: 200;
-  padding-top: 5px;
-}
-
-.sidebar-link {
-  height: 74px;
+  top: 0;
+  width: 100px;
+  height: 100vh;
+  background: linear-gradient(to bottom, #7a6fa4, #b09ac7);
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 50px;
+}
+
+.sidebar-logo {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.app-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar-menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
   cursor: pointer;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
-.sidebar-link:hover {
-  background-color: rgb(235, 235, 235);
+.sidebar-menu li img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
 }
 
-.sidebar-link img {
-  height: 24px;
-  margin-bottom: 4px;
+.sidebar-menu li:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.sidebar-link div {
-  font-size: 10px;
+/* Main Content */
+.main-content {
+  margin-left: 100px;
+  padding: 20px;
 }
