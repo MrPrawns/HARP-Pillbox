@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+.center {
+  justify-content: center;
+}
+
+.control-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #a78bfa, #6b46c1);
+  border: none;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.control-btn img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.control-btn p {
+  color: white;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.control-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+      align-items: flex-start; /* Allows content to be scrollable */
+  }
+
+  .container {
+      margin-top: 20px; /* Pushes content down */
+      gap: 15px;
+  }
+
+  .button-row {
+      flex-direction: column;
+      gap: 15px;
+  }
+}
